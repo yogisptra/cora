@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CORA — Crude Oil Reserve Assets | $CORA Token on Solana</title>
+  <meta name="description" content="Crude Oil Reserve Assets on Solana. Fair launched, community-owned."/>
+  <meta name="theme-color" content="#040408"/>
+  <link rel="icon" href="/logo.png" type="image/png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/src/style.css"/>
+</head>
+<body>
+<main>
+
+<!-- Ticker -->
+<div class="ticker-bar">
+  <div class="ticker-label"><span class="blink-dot"></span><span>INTEL</span></div>
+  <div class="ticker-track"><div class="ticker-content" id="tickerContent"></div></div>
+</div>
+
+<!-- Nav -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo"><img src="/logo.png" alt="CORA" width="70" height="29"/></a>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#reserves">Reserves</a><a href="#tokenomics">Tokenomics</a><a href="#roadmap">Roadmap</a><a href="#community">Community</a>
+    </div>
+    <div class="nav-right">
+      <a href="https://x.com/CORAONSOL" target="_blank" rel="noopener" class="nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+      <a href="https://t.me/" target="_blank" rel="noopener" class="nav-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+      <span class="nav-sep"></span>
+      <a href="#buy" class="nav-cta">Acquire $CORA</a>
+    </div>
+    <button class="mob-btn" id="mobBtn"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg">
+    <video autoplay loop muted playsinline class="hero-vid"><source src="https://www.coargov.com/hero_loop.mp4" type="video/mp4"/></video>
+    <div class="hero-grad"></div>
+    <div class="hero-radial"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge anim"><span class="blink-dot"></span><span>Crude Oil Reserve Assets — Solana</span></div>
+    <h2 class="hero-heading anim">
+      <span class="h-line">Power</span>
+      <span class="h-line shimmer">Flows.</span>
+      <span class="h-sub">Crude Runs Deep. The Barrel Decides.</span>
+    </h2>
+    <p class="hero-desc anim">The crude oil reserve assets protocol on Solana. Fair launched. Community-owned. No pre-sale.</p>
+    <div class="hero-btns anim">
+      <a href="#buy" class="btn-a">Acquire $CORA</a>
+      <a href="#" class="btn-b">Whitepaper</a>
+      <a href="#community" class="btn-c">Join the Fund</a>
+    </div>
+    <div class="hero-ca anim">
+      <button class="ca-box" id="copyBtn"><span class="ca-lbl">CA</span><span class="ca-val">CORA...a1G</span><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg></button>
+    </div>
+  </div>
+  <div class="scroll-ind"><span>Scroll</span><div class="scroll-bar"></div></div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Section 01: About -->
+<section id="about" class="sec">
+  <div class="sec-bg"><img src="https://www.coargov.com/bg-section1.webp" alt="" class="sec-bg-img"/><div class="sec-bg-overlay"></div></div>
+  <div class="sec-watermark left">01</div>
+  <div class="sec-inner">
+    <div class="sec-head anim"><div class="sec-line"></div><span class="sec-label">Market Overview</span></div>
+    <h2 class="sec-title anim"><span class="t-white">The New</span><br/><span class="t-grad">Energy Order</span></h2>
+    <div class="sec-cols anim">
+      <div class="sec-col-left"><p class="text-serif">The world runs on crude. <span class="t-white">Whoever controls the barrel controls the century.</span> From offshore rigs to continental pipelines, the oil map is being redrawn.</p></div>
+      <div class="sec-col-right">
+        <p>Supply chains disrupted. Prices volatile. Global demand at all-time highs. The energy market is the most powerful force in the world economy.</p>
+        <p><span class="t-red">CORA</span> brings crude oil on-chain — the first oil reserve protocol giving holders exposure to the most powerful commodity on Earth.</p>
+      </div>
+    </div>
+    <div class="stats-grid anim">
+      <div class="stat"><div class="stat-val">$5T+</div><div class="stat-name">Global Oil Market</div><div class="stat-sub">Annual traded value</div></div>
+      <div class="stat"><div class="stat-val">0.2B</div><div class="stat-name">Barrels Per Day</div><div class="stat-sub">World daily production</div></div>
+      <div class="stat"><div class="stat-val">78</div><div class="stat-name">Major Pipelines</div><div class="stat-sub">Global infrastructure</div></div>
+      <div class="stat"><div class="stat-val">85%</div><div class="stat-name">Energy Dependency</div><div class="stat-sub">Global reliance on oil</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Manifesto -->
+<section class="manifesto-sec">
+  <div class="manifesto-inner anim">
+    <p class="manifesto-text">While the world prints money and debates narratives, <span class="t-white">crude oil remains the only asset that powers everything.</span> Power flows. Always has.</p>
+    <div class="manifesto-label"><div class="m-line"></div><span>The CORA Manifesto</span><div class="m-line"></div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Section 02: Reserves -->
+<section id="reserves" class="sec">
+  <div class="sec-bg"><video autoplay loop muted playsinline class="sec-bg-vid"><source src="https://www.coargov.com/bg-section2.mp4" type="video/mp4"/></video><div class="sec-bg-overlay"></div></div>
+  <div class="sec-watermark right">02</div>
+  <div class="sec-inner">
+    <div class="sec-head center anim"><div class="sec-line"></div><span class="sec-label">Strategic Advantages</span><div class="sec-line"></div></div>
+    <h2 class="sec-title center anim"><span class="t-white">Why </span><span class="t-grad">CORA</span></h2>
+    <div class="cards-grid anim">
+      <div class="card"><div class="card-num">I</div><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125v-3.75"/></svg><h3>Crude Reserve Token</h3><p>Each $CORA token represents a stake in the crude oil narrative. The first oil reserve protocol on Solana.</p></div>
+      <div class="card"><div class="card-num">II</div><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg><h3>Crude Dominance</h3><p>The world consumes 100M barrels per day. CORA positions holders at the center of the next energy supercycle.</p></div>
+      <div class="card"><div class="card-num">III</div><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg><h3>Crude Alpha</h3><p>When traditional markets panic over energy crises, $CORA thrives. Inverse correlation to stability creates asymmetric upside.</p></div>
+      <div class="card"><div class="card-num">IV</div><svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg><h3>Community of CORA</h3><p>A growing network of oil degens and crude maximalists. The CORA pack moves together.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Section 03: Tokenomics -->
+<section id="tokenomics" class="sec">
+  <div class="sec-bg"><img src="https://www.coargov.com/bg-section3.webp" alt="" class="sec-bg-img"/><div class="sec-bg-overlay"></div></div>
+  <div class="sec-watermark left">03</div>
+  <div class="sec-inner">
+    <div class="sec-head anim"><div class="sec-line"></div><span class="sec-label">Token Architecture</span></div>
+    <h2 class="sec-title anim"><span class="t-white">Token</span><br/><span class="t-grad">Utility &amp; Mechanics</span></h2>
+    <div class="token-grid">
+      <div class="token-utils">
+        <div class="util-card anim"><svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg><h4>Staking</h4><div class="util-val">12% APY</div><p>Lock $CORA to earn yields from the protocol. Longer lock periods yield higher returns.</p></div>
+        <div class="util-card anim"><svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg><h4>Revenue Share</h4><div class="util-val">30%</div><p>Protocol revenue from transaction fees is distributed to staked $CORA holders.</p></div>
+        <div class="util-card anim"><svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"/></svg><h4>Governance</h4><div class="util-val">1 CORA = 1 Vote</div><p>Shape the future of CORA. Vote on community decisions, partnerships, and treasury allocation.</p></div>
+        <div class="util-card anim"><svg class="util-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg><h4>Burn Mechanism</h4><div class="util-val">2% per TX</div><p>Every transaction burns a portion of $CORA, creating deflationary pressure. Scarcity mirrors real oil depletion.</p></div>
+      </div>
+      <div class="token-dist anim">
+        <h4 class="dist-title">Token Distribution</h4>
+        <div class="dist-bars">
+          <div class="dist-row"><span class="dist-name">Liquidity Pool</span><span class="dist-pct">40%</span><div class="dist-bar"><div class="dist-fill" data-w="40" style="--bar-color:var(--accent)"></div></div></div>
+          <div class="dist-row"><span class="dist-name">Community &amp; Airdrop</span><span class="dist-pct">25%</span><div class="dist-bar"><div class="dist-fill" data-w="25" style="--bar-color:var(--accent-dim)"></div></div></div>
+          <div class="dist-row"><span class="dist-name">Team (24mo Lock)</span><span class="dist-pct">15%</span><div class="dist-bar"><div class="dist-fill" data-w="15" style="--bar-color:var(--red-accent)"></div></div></div>
+          <div class="dist-row"><span class="dist-name">Strategic Reserves</span><span class="dist-pct">10%</span><div class="dist-bar"><div class="dist-fill" data-w="10" style="--bar-color:var(--blue-steel)"></div></div></div>
+          <div class="dist-row"><span class="dist-name">Marketing &amp; Growth</span><span class="dist-pct">10%</span><div class="dist-bar"><div class="dist-fill" data-w="10" style="--bar-color:var(--text-muted)"></div></div></div>
+        </div>
+        <div class="dist-meta">
+          <div><span class="meta-label">Network</span><span class="meta-val">Solana</span></div>
+          <div><span class="meta-label">Standard</span><span class="meta-val">Token-2022</span></div>
+          <div><span class="meta-label">Mint</span><span class="meta-val t-red">Revoked</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Live Data -->
+<section class="sec-dark">
+  <div class="sec-inner center">
+    <div class="sec-head center anim"><div class="sec-line"></div><span class="sec-label">Live Market Data</span><div class="sec-line"></div></div>
+    <div class="chart-embed anim">
+      <iframe src="https://dexscreener.com/solana/ffumd7yknlb49b9spye53zzs9c8hw2pw7heeddtvid8e?embed=1&theme=dark&trades=0&info=0" class="chart-frame"></iframe>
+    </div>
+    <div class="market-stats anim">
+      <div class="mstat"><div class="mstat-val">—</div><div class="mstat-label">Price</div></div>
+      <div class="mstat"><div class="mstat-val">—</div><div class="mstat-label">24h Volume</div></div>
+      <div class="mstat"><div class="mstat-val">—</div><div class="mstat-label">Market Cap</div></div>
+      <div class="mstat"><div class="mstat-val">—</div><div class="mstat-label">Liquidity</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Section 04: Roadmap -->
+<section id="roadmap" class="sec">
+  <div class="sec-bg"><video autoplay loop muted playsinline class="sec-bg-vid"><source src="https://www.coargov.com/bg-section4.mp4" type="video/mp4"/></video><div class="sec-bg-overlay"></div></div>
+  <div class="sec-watermark right">04</div>
+  <div class="sec-inner">
+    <div class="sec-head center anim"><div class="sec-line"></div><span class="sec-label">Strategic Timeline</span><div class="sec-line"></div></div>
+    <h2 class="sec-title center anim"><span class="t-white">The </span><span class="t-grad">Roadmap</span></h2>
+    <div class="roadmap">
+      <div class="rm-timeline"></div>
+      <div class="rm-phase anim">
+        <div class="rm-left">
+          <span class="rm-num">I</span>
+          <h3>Phase I: Extraction</h3>
+          <span class="rm-status active"><span class="blink-dot"></span>ACTIVE</span>
+        </div>
+        <div class="rm-right">
+          <ul><li>Token launch on Solana (Token-2022)</li><li>Meteora DAMM v2 liquidity pool deployment</li><li>Community building — X, Telegram, Discord</li><li>Website &amp; brand identity deployment</li><li>First 1,000 holders milestone</li><li>CoinGecko &amp; CoinMarketCap listing</li></ul>
+        </div>
+      </div>
+      <div class="rm-phase anim">
+        <div class="rm-left">
+          <span class="rm-num">II</span>
+          <h3>Phase II: Pipeline</h3>
+          <span class="rm-status pending"><span class="blink-dot dim"></span>PENDING</span>
+        </div>
+        <div class="rm-right">
+          <ul><li>CEX listings (Tier 2-3 exchanges)</li><li>Staking protocol launch — 12% APY</li><li>Revenue share mechanism deployment</li><li>Strategic partnerships with energy DAOs</li><li>Governance module activation</li><li>10,000 holders milestone</li></ul>
+        </div>
+      </div>
+      <div class="rm-phase anim">
+        <div class="rm-left">
+          <span class="rm-num">III</span>
+          <h3>Phase III: Dominance</h3>
+          <span class="rm-status classified"><span class="blink-dot red"></span>CLASSIFIED</span>
+        </div>
+        <div class="rm-right">
+          <ul><li>Tier 1 CEX listings</li><li>Real-world oil reserve verification oracle</li><li>Cross-chain bridge deployment</li><li>Institutional partnership announcements</li><li>Full DAO governance transition</li><li class="redacted">[REDACTED]</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="rm-footer anim"><span>Exchange Listings: </span><span class="t-red">Pending Clearance</span></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- Section 05: Community -->
+<section id="community" class="sec">
+  <div class="sec-bg"><img src="https://www.coargov.com/bg-section5.webp" alt="" class="sec-bg-img"/><div class="sec-bg-overlay"></div></div>
+  <div class="sec-watermark left">05</div>
+  <div class="sec-inner">
+    <div class="sec-head center anim"><div class="sec-line"></div><span class="sec-label">Join the Forces</span><div class="sec-line"></div></div>
+    <h2 class="sec-title center anim"><span class="t-white">The CORA</span><br/><span class="t-grad">Community</span></h2>
+    <p class="sec-subtitle anim">The CORA community grows stronger every day. Join the movement.</p>
+    <div class="comm-stats anim">
+      <div class="cstat"><div class="cstat-val">—</div><div class="cstat-label">Holders</div></div>
+      <div class="cstat"><div class="cstat-val">1B</div><div class="cstat-label">Total Supply</div></div>
+      <div class="cstat"><div class="cstat-val">0%</div><div class="cstat-label">Burned</div></div>
+      <div class="cstat"><div class="cstat-val">—</div><div class="cstat-label">Circulating</div></div>
+    </div>
+    <div class="social-grid anim">
+      <a href="https://x.com/CORAONSOL" target="_blank" class="social-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><div><strong>X (Twitter)</strong><span>Follow</span></div><svg class="arrow" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg></a>
+      <a href="https://dexscreener.com/solana/ffumd7yknlb49b9spye53zzs9c8hw2pw7heeddtvid8e" target="_blank" class="social-card"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg><div><strong>DexScreener</strong><span>Chart</span></div><svg class="arrow" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg></a>
+    </div>
+    <div class="cta-box anim">
+      <h3>Power Never Stops.</h3>
+      <p class="cta-quote">"He who controls the barrel, controls the future."</p>
+      <a href="#buy" class="btn-a">Enter the Reserve</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="buy">
+  <div class="footer-ca">
+    <span class="ca-label-sm">Contract Address</span>
+    <button class="ca-box-full" id="copyBtn2"><span class="ca-full">CoARSp4P9Yr7MEnKMZE7chyAkK3mNbPFyArdQeMm9a1G</span><span class="ca-copy">Copy</span></button>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="/logo.png" alt="CORA" width="80" height="33"/><p>CORA — The crude oil reserve assets protocol on Solana.</p></div>
+      <div class="footer-col"><h4>Protocol</h4><a href="#">Acquire $CORA</a><a href="#">Staking</a><a href="#">Governance</a><a href="#">Whitepaper</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="#">Documentation</a><a href="https://dexscreener.com/solana/ffumd7yknlb49b9spye53zzs9c8hw2pw7heeddtvid8e" target="_blank">DexScreener</a><a href="#">CoinGecko</a><a href="#">Audit Report</a></div>
+      <div class="footer-col"><h4>Community</h4><a href="https://x.com/CORAONSOL" target="_blank">X (Twitter)</a><a href="https://t.me/" target="_blank">Telegram</a><a href="#">Medium</a></div>
+    </div>
+    <div class="divider my"></div>
+    <div class="footer-bottom">
+      <span>2026 CORA — Community Energy Token</span>
+      <span class="disclaimer">$CORA is a speculative digital asset on the Solana blockchain. Not backed by physical oil reserves or any government entity. Not financial advice.</span>
+    </div>
+  </div>
+</footer>
+
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
