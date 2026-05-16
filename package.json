@@ -1,7 +1,7 @@
 {
   "name": "cora-website",
   "version": "1.0.0",
-  "description": "CORA - Crude Oil Reserve Asset on Solana",
+  "description": "C0RA - Crude Oil Reserve Asset on Solana",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
